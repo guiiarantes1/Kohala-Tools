@@ -1,0 +1,87 @@
+header{
+	font-family:Calibri, Tahoma, Arial;
+	text-align: center;
+	text-decoration: underline ;
+	
+}
+
+body{font-family:Calibri, Tahoma, Arial}
+	.TabControl{ width:100%; overflow:hidden; height:700px;} 
+
+	.TabControl #header{ width:100%; border: solid 1px; overflow:hidden; cursor:pointer}
+
+	.TabControl #content{ width:100%; border: solid 1px;overflow:hidden; height:100%; }
+
+	.TabControl .abas{display:inline;}
+
+	.TabControl .abas li{float:left}
+
+	.aba{width:100px; height:30px; border:solid 1px; border-radius:5px 5px 0 0;
+		text-align:center; padding-top:5px; background:#c0c0c0}
+
+	.ativa{width:100px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0;
+		text-align:center; padding-top:5px; background:#c0c0c0;}
+
+	.ativa span, .selected span{color:#fff}
+
+	.TabControl #content{background:#fcfcfc}
+
+	.TabControl .conteudo{width:100%;  background:#2b2b2b; display:none; height:100%;color:#fff}
+	
+	.selected{width:100px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0;
+		text-align:center; padding-top:5px; background:#3a3a3a}
+
+/*css do botao modelo */
+.dropbtn {
+  background-color: #00b400;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-color: white;
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #00a700;}
+
+.show {display: block;}

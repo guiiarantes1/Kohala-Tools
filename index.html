@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE-edge">
+    <meta name="viewport"   content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+    <title> GCA Tools   </title>
+</head>
+
+<header>
+    <h1>G.C.A Tools v1.0</h1>
+</header>
+
+<body>
+   <div class="TabControl">
+	<div id="header">
+		<ul class="abas">
+			<li>
+				<div class="aba">
+					<span>Samsung</span>
+				</div>
+			</li>
+			<li>
+				<div class="aba">
+					<span>Motorola</span>
+				</div>
+			</li>
+			<li>
+				<div class="aba">
+					<span>Xiaomi</span>
+				</div>
+			</li>
+			<li>
+				<div class="aba">
+					<span>LG</span>
+				</div>
+			</li>
+            <li>
+				<div class="aba">
+					<span>Asus</span>
+				</div>
+			</li>
+            <li>
+				<div class="aba">
+					<span>Redmi</span>
+				</div>
+			</li>
+            
+		</ul>
+	</div>
+	<div id="content">
+		<div class="conteudo">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Escolha o modelo</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Pesquisar.." id="myInput" onkeyup="filterFunction()">
+                  <a href="#about">Galaxy s5</a>
+                  <a href="#base">Galaxy J5 Prime</a>
+                  <a href="#blog">Galaxy A10</a>
+                  <a href="#contact">Galaxy J2</a>
+                  <a href="#custom">Galaxy Note 9+</a>
+                  <a href="#support">Galaxy S7 Edge</a>
+                  <a href="#tools">Galaxy A7 2017</a>
+                </div>
+              </div>
+		</div>
+		<div class="conteudo">
+            <label for="modelo">Escolha o modelo:</label>
+            <select id="modelo" name="listaModelos" form="modeloform">
+                <option value="modelox">-----------------------</option>
+        
+            </select>
+		</div>
+		<div class="conteudo">
+            <label for="modelo">Escolha o modelo:</label>
+            <select id="modelo" name="listaModelos" form="modeloform">
+                <option value="modelox">-----------------------</option>
+        
+            </select>
+		</div>
+		<div class="conteudo">
+            <label for="modelo">Escolha o modelo:</label>
+            <select id="modelo" name="listaModelos" form="modeloform">
+                <option value="modelox">-----------------------</option>
+        
+            </select>
+		</div>
+        <div class="conteudo">
+            <label for="modelo">Escolha o modelo:</label>
+            <select id="modelo" name="listaModelos" form="modeloform">
+                <option value="modelox">-----------------------</option>
+        
+            </select>
+		</div>
+        <div class="conteudo">
+            <label for="modelo">Escolha o modelo:</label>
+            <select id="modelo" name="listaModelos" form="modeloform">
+                <option value="modelox">-----------------------</option>
+        
+            </select>
+		</div>
+        
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#content div:nth-child(1)").show();
+    $(".abas li:first div").addClass("selected");
+   	$(".aba").click(function(){
+	    $(".aba").removeClass("selected");
+ 	    $(this).addClass("selected");
+	    var indice = $(this).parent().index();
+ 	    indice++;
+		$("#content div").hide();
+ 		$("#content div:nth-child("+indice+")").show();
+ 	});
+ 
+	$(".aba").hover(
+		function(){$(this).addClass("ativa")},
+   	    function(){$(this).removeClass("ativa")}
+  	);
+  });
+  
+// script botao modelo // 
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+ </script>
