@@ -1,11 +1,30 @@
 header{
 	font-family:Calibri, Tahoma, Arial;
-	text-align: center;
-	text-decoration: underline ;
-	
+
+  font-size: bold;
+	text-decoration: underline;
+  background-image: url(header.png);
+  background-repeat: no-repeat;
+  background-position: 5em,10em;
+  background-size: cover;
+  height: 200px;
+  
 }
 
 body{font-family:Calibri, Tahoma, Arial}
+  
+  .bg >img{
+    width: 700px;
+    text-align: auto;
+    position: absolute;
+    display: inline-block;
+    opacity: 0.9;
+    margin-left: 40em;
+    margin-top: 60px;
+  
+    
+  }
+
 	.TabControl{ width:100%; overflow:hidden; height:700px;} 
 
 	.TabControl #header{ width:100%; border: solid 1px; overflow:hidden; cursor:pointer}
@@ -26,7 +45,7 @@ body{font-family:Calibri, Tahoma, Arial}
 
 	.TabControl #content{background:#fcfcfc}
 
-	.TabControl .conteudo{width:100%;  background:#2b2b2b; display:none; height:100%;color:#fff}
+	.TabControl .conteudo{width:100%; height:100%;color:#fff;}
 	
 	.selected{width:100px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0;
 		text-align:center; padding-top:5px; background:#3a3a3a}
