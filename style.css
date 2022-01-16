@@ -1,40 +1,39 @@
+@font-face {
+  font-family: Aquire;
+  src: url(Aquire-BW0ox.otf);
+}
+
 header{
-  background-image: url(header.png);
-  background-repeat: no-repeat;
-  background-position-y: -3.3em;
-  background-size:cover;
-  background-clip: border-box;
-  height: 190px;
+  height: 70px;
+  background-color:rgb(30,105,157) ;
+  background-image: linear-gradient(180deg, rgb(30,105,157), rgb(43, 153, 231));
   
 }
 
 header > h1{
-  font-family:Calibri, Tahoma, Arial;
-  text-align: left;
+  font-family:Aquire;
+  text-align: center;
   font-weight: bolder;
-	text-decoration: underline;
-  width: 15px;
-  padding: 1em;
-  color: rgb(30,105,157) ;
+  padding: 0.5em;
+  color: rgb(54, 49, 49) ;
 
 }
 
 
 
 body{font-family:Calibri, Tahoma, Arial}
-  
+  .bg{
+    text-align: center;
+  }
   .bg >img{
     width: 700px;
-    text-align: auto;
-    position: absolute;
-    display: inline-block;
-    opacity: 0.9;
-    margin-left: 40em;
-    margin-top: 60px;
-  
-    
+    opacity: 0.7;
+    z-index: -1;    
   }
-
+  .bg>img{
+    max-width:800px;
+    width: 300px;
+  }
 	.TabControl{ width:100%; overflow:hidden; height:700px;} 
 
 	.TabControl #header{ width:100%; border: solid 1px; overflow:hidden; cursor:pointer}
@@ -43,7 +42,7 @@ body{font-family:Calibri, Tahoma, Arial}
 
 	.TabControl .abas{display:inline;}
 
-	.TabControl .abas li{float:left}
+	.TabControl .abas li{float:left;}
 
 	.aba{width:100px; height:30px; border:solid 1px; border-radius:5px 5px 0 0;
 		text-align:center; padding-top:5px; background: rgb(30,105,157); color: black; font-weight: bolder;}
@@ -53,9 +52,9 @@ body{font-family:Calibri, Tahoma, Arial}
 
 	.ativa span, .selected span{color:#fff}
 
-	.TabControl #content{background:#fcfcfc}
+	.TabControl #content{}
 
-	.TabControl .conteudo{width:100%; height:100%;color:#fff;}
+	.TabControl .conteudo{width:100%; height:100%;color:rgb(0, 0, 0);}
 	
 	.selected{width:120px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0;
 		text-align:center; padding-top:5px; background:rgb(43, 153, 231)}
@@ -113,7 +112,7 @@ body{font-family:Calibri, Tahoma, Arial}
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content button {
   margin-left: 0.5em;
   border-style:solid;
   border-width: 0.05px;
@@ -128,3 +127,8 @@ body{font-family:Calibri, Tahoma, Arial}
 .dropdown a:hover {background-color: rgb(30,105,157); color: white;}
 
 .show {display: block;}
+
+#informacoesAparelho{
+  display: none;
+  color: black;
+}
