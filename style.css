@@ -26,14 +26,11 @@ body{font-family:Calibri, Tahoma, Arial}
     text-align: center;
   }
   .bg >img{
-    width: 700px;
+    width: 500px;
     opacity: 0.7;
     z-index: -1;    
   }
-  .bg>img{
-    max-width:800px;
-    width: 300px;
-  }
+
 	.TabControl{ width:100%; overflow:hidden; height:700px;} 
 
 	.TabControl #header{ width:100%; border: solid 1px; overflow:hidden; cursor:pointer}
@@ -108,20 +105,29 @@ body{font-family:Calibri, Tahoma, Arial}
   background-color: white;
   min-width: 100px;
   overflow: auto;
-  border: 1px solid rgb(43, 153, 231);
   z-index: 1;
+  border-style: solid;
+  border-color: rgb(30,105,157);
+  margin-left: 0.5em;
+  border-width: 0.5px;
+  
 }
 
 .dropdown-content button {
-  margin-left: 0.5em;
-  border-style:solid;
+  
+  margin-bottom: 3px;
+  background-color: white;
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 14px 50px 12px 50px;
+  border-style: solid;
   border-width: 0.05px;
   border-color: rgb(30,105,157);
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-weight: bolder;
+  cursor:pointer ;
+
 }
 
 .dropdown a:hover {background-color: rgb(30,105,157); color: white;}
@@ -131,4 +137,26 @@ body{font-family:Calibri, Tahoma, Arial}
 #informacoesAparelho{
   display: none;
   color: black;
+}
+
+#informacoesAparelho > p {
+  margin-top: 50px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#linha-vertical {
+  display: none;
+  height: 550px;
+  border-right: 1.5px solid black;  
+  margin-right: 50em;
+  margin-top: -27em;
+}
+
+#imagem-aparelho > img {
+  display: none;
+  margin-top: -32em;
+  margin-left: 55em;
+  width: 500px;
 }

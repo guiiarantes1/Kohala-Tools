@@ -19,9 +19,17 @@ const motoG3 = {
 	modeloFlexDeCarga: "yyy",
 	riscoAbrir: "s/n",
 }
+const mi8Lite = {
+	modeloCelular: "Mi 8 Lite",
+	modeloDaBateria: "xxx40",
+	modeloDoLcd: "xxx",
+	modeloFlexDeCarga: "yyy",
+	riscoAbrir: "s/n",
+}
 const marcas = {
 	samsung:[galaxyS5],
 	motorola:[motoG2,motoG3],
+	xiaomi:[mi8Lite],
 }
 $(document).ready(function () {
 	$("#content div:nth-child(1)").show();
@@ -33,6 +41,7 @@ $(document).ready(function () {
 		indice++;
 		const marcaSelecionada = this.children[0].innerText.toLowerCase();
 		const modelosDeCelular = marcas[marcaSelecionada].map(marca => marca.modeloCelular);
+	
 
 		const dropdownModelos = $("#myDropdown");
 
@@ -72,8 +81,14 @@ function filterFunction() {
 }
 
 
+
+
 function selecionaModelo(){
 	$("#fundoKeep").hide();
-	$("#informacoesAparelho").show();
+	$("#informacoesAparelho").show();	
+	$("#linha-vertical").show();
+	$("#imagem-modelo").show();
+	
+
 
 }
